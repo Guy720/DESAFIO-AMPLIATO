@@ -1,0 +1,123 @@
+<html lang="pt-br">
+  <head> 
+      <link rel="stylesheet" type="text/css" href="css/Style.css">
+      <meta charset="utf-8">
+      <title>Cadastro</title>
+  </head>
+<body>
+    <div id="header">
+        <img id="css" src="imagens/CSS.png">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a id="pipe" href="#"></a></li>
+          <li><a href="Perfil.html">Perfil</a>
+          <ul>
+          <li><a id="login" href="Login.html">Login</a></li>
+          <li><a id="pipe2" href="#"></a></li>
+          <li><a id="homeSm" href="Home.html">Sair</a></li>
+        </ul>
+        </ul>
+      </li>
+   </ul>
+</div>
+    <div id="nav">
+          <a id="cadastro" href="Cadastro.html">Cadastro
+             <i class="fa-solid fa-address-card"></i>
+          </a>
+      <a href="Sobre.html">Sobre
+        <i class="fa-solid fa-hand-point-right"></i>
+    </a>
+  </div>
+     <div id="container">
+       <div id="home">
+          <br>
+            <div id="titulo">
+            <p>Cadastro</p>
+        </div>
+     </div> 
+        <div id="formulario">
+            <div id="conteudoFm">
+                <div id="alinhamento">
+                    <form name="cadastro" method="get" action="Resultado.html">
+                        <div id="alinhamento2">
+                            <label for="name">Nome</label>
+                            <input type="text" name="nome" id="nome" required placeholder="Insira seu Nome">
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required placeholder="Insira seu E-mail">
+                          </div>
+                        <div>
+                            <label for="password">Senha</label>
+                            <input type="password" name="senha" id="senha" required minlength="8" maxlength="64" placeholder="Insira a Senha">
+                       </div>
+                            <label for="idade">Idade</label>
+                            <input type="number" name="senha" id="senha" required placeholder="Insira sua Idade">
+                      </div>
+                          <div class="form-inline">
+                              <label for="radio">Gênero</label>
+                             <div id="input">
+                              <input type="radio" name="genero" id="masculino" value="Masculino">
+                              <label for="masculino">Masculino</label>
+                             <div>
+                              <input type="radio" name="genero" id="feminino" value="Feminino">
+                              <label for="feminino">Feminino</label>
+                            </div>
+                          <div>
+                              <input type="radio" name="genero" id="outro" value="Outro">
+                              <label for="outro">Outro</label>
+                           </div>
+                         </div>   
+                        <div>
+                            <label for="checkbox">Hobbies</label>
+                        </div>
+                          <div id="hobbie">
+                              <input type="checkbox" id="futebol" name="hobbies">
+                              <label for="futebol">Futebol</label>
+                          <div>
+                              <input type="checkbox" id="pipa" name="hobbies">
+                              <label for="pipa">Empinar pipa</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="videogame" name="hobbies">
+                            <label for="videogame">Video game</label>
+                           </div>
+                        </div>
+                          <div>
+                            <label for="select">Tipo sanguíneo:</label>
+                          </div>
+                        </div>
+                          <select name="tipo" id="tipo">
+                              <option value="">Não sei</option>
+                              <option value="a">A</option>
+                              <option value="b">B</option>
+                              <option value="ab">AB</option>
+                              <option value="o">O</option>
+                          </select>
+                            <div id="alinhamento3">
+                              <label for="msg">Fale sobre você</label>
+                              <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        </div>
+                      <div class="button">
+                          <button style="margin-right: 1034px;" id="apagar" type="reset" name="apagar">Apagar</button>
+                          <button type="submit" name="enviar" id="enviar">Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+              </form>                                     
+            </div>
+          </div>  
+      <div id="footerFm">
+         <footer>
+            <div id="ampliato">
+               <div id="ampliato3">
+                 <p>Made by ampliato</p>
+                </div>
+            </div>
+        </footer> 
+      </div> 
+    </div>
+      <script src="https://kit.fontawesome.com/60107c5691.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="JavaScript/Validacao-Cadastro.js" defer></script>
+      <script type="text/javascript" src="JavaScript/Rota.js" defer></script>
+  </body>   
+</html>
